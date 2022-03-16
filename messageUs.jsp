@@ -1,0 +1,38 @@
+<%@page import ="java.sql.*" %>
+<%@include file="header-user.jsp"%>
+<html>
+<head>
+<link rel="stylesheet" href="css/messageUs.css">
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<title>Message Us</title>
+</head>
+<body>
+<div class="container">
+
+<center><h3 id="h3topic"><b>Any Queries Contact here</b></h3></center>
+
+<%
+String msg=request.getParameter("msg");
+if("valid".equals(msg)){
+%>
+<h3 style="text-align:center; color:white; background:green">Message successfully sent. Our team will contact you soon!</h3>
+<% } %>
+
+<%
+if("invalid".equals(msg)){
+%>
+<h3 style="text-align:center; color:white; background:red">Some thing Went Wrong! Try Again!</h3>
+<% } %>
+
+
+<form action="messageUsAction.jsp" method="post">
+<input class="input-style" type="text" name="subject" placeholder="subject..." required>
+<br><br>
+<textarea class="input-style" name="body" placeholder="Enter Your Message..." required></textarea>
+<br><br>
+<button class="button" type="submit">Send Message<i class="for-fa-arrow-alt-circle-right"></i></button>
+</form>
+</div>
+<br><br><br>
+</body>
+</html>

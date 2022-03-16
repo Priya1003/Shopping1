@@ -1,0 +1,16 @@
+  <GlobalNamingResources>
+    <Resource name="jdbc/onlineshopping1"
+              global="jdbc/onlineshopping1"
+              factory="org.apache.tomcat.jdbc.pool.DataSourceFactory"
+              auth="Container"
+              type="javax.sql.DataSource"             
+              username="root"
+              password="Safdar@28"
+              driverClassName="com.mysql.cj.jdbc.Driver"
+              url="jdbc:mysql://localhost:3306/onlineshopping1"
+              maxTotal="50"
+              maxIdle="10"
+              maxWaitMillis="10000"
+              removeAbandonedTimeout="300"           
+              defaultAutoCommit="true" />
+  </GlobalNamingResources>

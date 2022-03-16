@@ -1,0 +1,35 @@
+    
+#footer {
+  background: #333;
+  margin-bottom:0;
+}
+#footer h1 {
+  font-size: 2rem;
+  margin: 0;
+  padding: 2rem 0;
+  text-align: center;
+  color: #fff;
+}
+
+#footer h1 span {
+  color: #FFF200;
+}
+
+#footer .brand {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+#footer .brand a .logo img {
+  height: 4rem;
+}
+
+#footer .brand .icons a {
+  font-size: 2rem;
+  margin: 2rem 1rem;
+  color: #fff;
+}
+
+#footer .brand .icons a:hover {
+  color: #FFF200;
+}
